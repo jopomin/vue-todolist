@@ -17,7 +17,7 @@
             <img src="img/logo.png" alt="Logo Boolean">
         </div>
         <div class="todo-input">
-            <input type="text" v-model="newItem">
+            <input @keyup.enter="addItem" type="text" v-model="newItem">
             <button @click="addItem">Add Item</button>
         </div>
         <div class="todo-cont">

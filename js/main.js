@@ -17,7 +17,7 @@ var app = new Vue ({
 
         rmvItem(index) {
             this.items.splice(index, 1);
-        }
+        },
     }
 });
 
