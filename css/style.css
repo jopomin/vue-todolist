@@ -16,7 +16,7 @@
 }
 
 .logo img {
-    max-width: 350px;
+    max-width: 250px;
 }
 
 .todo-input {
@@ -26,20 +26,32 @@
 
 .todo-input input {
     padding: 7px 12px;
-    margin: 5px;
+    margin: 10px 3px;
+    width: 60%;
 }
 
-.todo-input button {
-    background: lime;
-    padding: 7px 12px;
+.btn {
+    padding: 7px 15px;
+    margin: 10px 3px;
+    font-weight: 600;
+    font-size: 15px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
-    margin: 5px;
+}
+
+.btn-add {
+    background: #001533;
+    color: #00E165;
+}
+
+.btn-cl {
+    background: #00E165;
+    color: #fff;
 }
 
 .todo-cont {
-    background: #ddd;
+    background: #eee;
     border-radius: 20px;
     padding: 20px 40px;
     text-align: center;
@@ -50,14 +62,25 @@
 }
 
 .todo-cont ul li {
-    margin: 25px 0;
+    padding: 20px 0;
     font-size: 16px;
     color: #444;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #bbb;
+}
+
+.todo-cont ul li:last-child {
+    border-bottom: none;
 }
 
 .todo-cont ul li i {
     cursor: pointer;
+}
+
+p {
+    color: #aaa;
+    font-size: 18px;
+    font-weight: 600;
 }

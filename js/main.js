@@ -3,9 +3,11 @@ var app = new Vue ({
     data: {
         newItem: "",
         items: [
-            "Buy milk",
-            "Clean the car",
-            "Do exercise"
+            "8 Peperoni",
+            "2 litri di latte",
+            "200gr di Prosciutto Crudo",
+            "200gr di Parmigiano Grattugiato",
+            "3 bottiglie di passata"
         ]
     },
     methods: {
@@ -18,6 +20,10 @@ var app = new Vue ({
         rmvItem(index) {
             this.items.splice(index, 1);
         },
+
+        clearAll() {
+            this.items = [];
+        }
     }
 });
 

@@ -18,12 +18,14 @@
         </div>
         <div class="todo-input">
             <input @keyup.enter="addItem" type="text" v-model="newItem">
-            <button @click="addItem">Add Item</button>
+            <button @click="addItem" class="btn btn-add">Add Item</button>
+            <button @click="clearAll" class="btn btn-cl">Clear All</button>
         </div>
         <div class="todo-cont">
-            <ul>
+            <ul v-if="items.length > 0">
                 <li v-for="(item, index) in items">{{ item }}<i @click="rmvItem(index)" class="fas fa-times"></i></li>
             </ul>
+            <p v-else>La lista è vuota</p>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
