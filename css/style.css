@@ -2,4 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.logo {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.logo img {
+    max-width: 350px;
+}
+
+.todo-input {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.todo-input input {
+    padding: 7px 12px;
+    margin: 5px;
+}
+
+.todo-input button {
+    background: lime;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.todo-cont {
+    background: #ddd;
+    border-radius: 20px;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.todo-cont ul {
+    list-style: none;
+}
+
+.todo-cont ul li {
+    margin: 25px 0;
+    font-size: 16px;
+    color: #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-cont ul li i {
+    cursor: pointer;
 }
