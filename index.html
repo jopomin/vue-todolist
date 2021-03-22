@@ -17,12 +17,12 @@
             <img src="img/logo.png" alt="Logo Boolean">
         </div>
         <div class="todo-input">
-            <input type="text" v-model="message">
-            <button>Add Item</button>
+            <input type="text" v-model="newItem">
+            <button @click="addItem">Add Item</button>
         </div>
         <div class="todo-cont">
             <ul>
-                <li v-for="(item, index) in items">{{ item }}<i class="fas fa-times"></i></li>
+                <li v-for="(item, index) in items">{{ item }}<i @click="rmvItem(index)" class="fas fa-times"></i></li>
             </ul>
         </div>
     </div>
